@@ -37,10 +37,30 @@ header .user {
 }
 
 header .user a {
-    font-size: 13px;
+    font-size: 1rem;
     color: #89949b;
     padding-top: 5px;
 }
+
+header .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+header .dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+header .dropdown:hover .dropdown-menu {display: block;}
 
 main h2 {
     margin-top: 4px;
@@ -54,13 +74,13 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 1rem;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
 nav ul li a { 
-    font-size: 14px;
+    font-size: 1.1rem;
     font-weight: normal;
     color: #828c92;
 }
@@ -85,24 +105,24 @@ nav ul li:last-child {
 
 h1 {
     color: #4b5c66;
-    font-size: 24px;
+    font-size: 1.8rem;
     font-weight: normal;
     margin: 0 0 8px 0;
 }
 
 .name p { 
     color: #a0aab1;
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 .name p img { 
-    margin-left: 12px;
+    margin-left: 0.8rem;
 }
 
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
+    font-size: 0.8rem;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
@@ -117,13 +137,13 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: normal;
     color: #4b5c66;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -137,7 +157,7 @@ input.search {
     box-shadow: none;
     height: 28px;
     width: 100%;
-    font-size: 13px;
+    font-size: 0.8rem;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
     margin: 0;
@@ -146,12 +166,43 @@ input.search {
     box-shadow: inset 1px 1px 5px #d5d5d5;
 }
 
+@media screen and (max-width: 800px) {
+    .search{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+.share{
+         display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 60%;
+  }
+}
 input.submit {
     display: none;
 }
 
 .station {
-    font-size: 12px;
+    font-size: 0.8rem;
     color: #008fd5;
     border-radius: 5px;
     border: 1px solid #b8c3c9;
@@ -170,7 +221,7 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
+    font-size: 0.8rem;
     color: #89949b;
     margin: 10px 0;
 }
