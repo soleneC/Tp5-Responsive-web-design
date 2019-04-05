@@ -11,6 +11,7 @@
 
 body {
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
+    overflow-x: hidden !important;
 }
 
 a {
@@ -173,13 +174,6 @@ input.search {
 
 }
 
-@media screen and (max-width: 400px) {
-
-.share{
-         display: none;
-    }
-}
-
 @media screen and (min-width: 1400px) {
   body {
     font-size: 110%;
@@ -187,6 +181,9 @@ input.search {
 }
 
 @media screen and (max-width: 600px) {
+    .share{
+         display: none;
+    }
   body {
     font-size: 80%;
   }
